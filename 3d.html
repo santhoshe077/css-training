@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d</title>
+    <style>
+        div#thd{
+            width: 300px;
+            height: 100px;
+            background-color: brown;
+            animation-name: exp;
+            animation-duration: 5s;
+        }
+        @keyframes exp {
+            from{background-color: brown;}
+            to{background-color: blueviolet;
+            }
+        }
+        div#hi{
+            width: 300px;
+            height: 100px;
+            background-color: brown;
+            position: relative;
+            animation-name: exm;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        @keyframes exm {
+            0%{background-color: brown;left:0% ;}
+            25%{background-color: blueviolet; left: 50%;}
+            50%{background-color: rgb(236, 250, 38);left: 100%;}
+            75%{background-color: chocolate;right: 50%;}
+            100%{background-color: brown;right:0% ;}
+
+        }
+    </style>
+</head>
+<body>
+    <div id="thd"></div>
+    <br>
+    <div id="hi"></div>
+    
+</body>
+</html>
