@@ -5,39 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box {
-  width: 150px;
-  height: 150px;
-  border: 2px solid green;
-  background: lightblue;
-  position: relative;
-}
-.basic {
-  box-shadow: 10px 8px 10px 5px orange;
-}
-.shadow:before {
-  content:"";
-  position: absolute;
-  inset: -5px;
-  transform: translate(10px,8px);
-  z-index: -1;
-  background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
-  filter: blur(10px);
-}
+        .box{
+            width: 100px;
+            padding: 5px;
+          
+            height: 100px;
+            float: left;
+            border: 5px solid grey;
+        }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  grid-auto-flow: column;
-  gap: 30px;
-}
     </style>
 </head>
 <body>
-    <div class="box shadow"></div>
-<div class="box basic"></div>
-    
+    <div>
+        <div class="box">Box</div>
+        <p> Mood Indigo, the annual student-driven festival of IIT Bombay, is a vibrant celebration of creativity and culture. The 52nd edition of the student-driven ...   Mood Indigo, popularly known as MoodI or MI, is the annual cultural festival of the Indian Institute of Technology Bombay. It is a four-day-long event held ...</p>
+    </div>
 </body>
 </html>
